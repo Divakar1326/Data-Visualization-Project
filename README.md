@@ -1,4 +1,3 @@
-Here’s a structured README file for your data visualization project, along with repository and program titles.
 
 ### Repository Title
 **Data-Visualization-Project**
@@ -90,5 +89,3 @@ Contributions are welcome! If you have suggestions for improvements or features,
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ---
-
-Feel free to adjust any part of the README file to better suit your project's specifics or to reflect additional features you might want to include!
