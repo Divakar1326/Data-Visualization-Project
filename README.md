@@ -1,91 +1,65 @@
+Titanic-Data-Visualization
+Overview
+This repository contains a Python program designed to analyze and visualize data from the Titanic dataset. The analysis aims to explore the factors influencing survival rates among passengers, utilizing libraries such as Pandas, Seaborn, and Matplotlib for data manipulation and visualization.
 
-### Repository Title
-**Data-Visualization-Project**
+Features
+Data Cleaning:
 
-### Program Title
-**Demographic Data Visualization**
+Handling missing values for Age, Embarked, and Fare.
+Dropping the Cabin column due to excessive missing values.
+Exploratory Data Analysis (EDA):
 
-### README File
+Summary statistics of numerical variables.
+Cross-tabulations for various attributes.
+Correlation analysis.
+Visualizations:
 
----
+Count plots for survival based on Age, Gender, Passenger Class, and Embarked Port.
+Box plots and violin plots to analyze age distribution concerning survival.
+Histograms and swarm plots for Fare distribution by survival status.
+Pie charts for survival rates segmented by gender and passenger class.
+Heatmaps for visualizing correlations among numerical variables.
+Installation
+Clone the repository:
 
-# Data-Visualization-Project
+bash
+Copy code
+git clone https://github.com/yourusername/Titanic-Data-Visualization.git
+Navigate to the project directory:
 
-## Overview
+bash
+Copy code
+cd Titanic-Data-Visualization
+Install the required packages:
 
-This repository contains a Python program designed to visualize demographic data using bar graphs and histograms. The visualizations are created using the popular libraries Pandas, Matplotlib, and Seaborn. The primary goal is to provide insights into the gender and age distribution of individuals, as well as their occupations, through various graphical representations.
+bash
+Copy code
+pip install pandas seaborn matplotlib
+Ensure you have the Titanic dataset (Titanic.csv) placed in the project directory.
 
-## Features
+Usage
+Run the program:
 
-- **Bar Graphs**:
-  - Gender Distribution
-  - Occupation Distribution
-  - Average Age by Occupation
-  - Gender Distribution by Age Group
-  
-- **Histograms**:
-  - Age Distribution
-  - Age Distribution by Gender (Overlaid)
-  - Age Distribution with Density Plot (KDE)
-  - Age Group Distribution
+bash
+Copy code
+python your_program_file.py
+The program will load the Titanic dataset and perform data cleaning, followed by various analyses and visualizations that will be displayed.
 
-## Installation
+Data Format
+Ensure that the Titanic.csv file has the following structure:
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/yourusername/Data-Visualization-Project.git
-   ```
-
-2. Navigate to the project directory:
-   ```bash
-   cd Data-Visualization-Project
-   ```
-
-3. Install the required packages:
-   ```bash
-   pip install pandas matplotlib seaborn
-   ```
-
-## Usage
-
-1. Place your CSV file (named `u.csv`) containing demographic data in the project directory. The CSV should include at least the following columns: `gender`, `occupation`, and `age`.
-
-2. Run the program:
-   ```bash
-   python your_program_file.py
-   ```
-
-3. The program will generate two sets of visualizations:
-   - A series of bar graphs showcasing the demographic distributions.
-   - A series of histograms depicting the age distribution and its variations.
-
-## Data Format
-
-Ensure that the `u.csv` file has the following structure:
-
-| gender | occupation | age |
-|--------|------------|-----|
-| Male   | Engineer   | 34  |
-| Female | Teacher    | 29  |
-| Male   | Artist     | 45  |
-| ...    | ...        | ... |
-
-## Example Output
-
-The program will output four bar graphs and four histograms based on the data provided. The visualizations will display the following information:
-
-- **Gender Distribution**: A count of males and females in the dataset.
-- **Occupation Distribution**: A count of individuals for each occupation.
-- **Average Age by Occupation**: The mean age of individuals grouped by their occupation.
-- **Gender Distribution by Age Group**: A stacked bar graph showing gender distribution across different age groups.
-- **Histograms**: Various histograms that display the age distribution in multiple formats.
-
-## Contributing
-
+PassengerId	Survived	Pclass	Name	Sex	Age	SibSp	Parch	Ticket	Fare	Cabin	Embarked
+1	0	3	...	male	22	1	0	...	7.25	...	S
+2	1	1	...	female	38	1	0	...	71.2833	...	C
+...	...	...	...	...	...	...	...	...	...	...	...
+Key Insights
+Females had significantly higher survival rates compared to males.
+First-class passengers had better survival chances than those in lower classes.
+Children and younger passengers were more likely to survive.
+Passengers who paid higher fares had higher survival chances.
+Passengers who embarked at Cherbourg had better odds of survival than those from Southampton.
+Contributing
 Contributions are welcome! If you have suggestions for improvements or features, feel free to create a pull request or open an issue.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
+License
+This project is licensed under the MIT License - see the LICENSE file for details.
