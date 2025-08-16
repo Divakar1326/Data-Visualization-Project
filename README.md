@@ -61,5 +61,18 @@ Passengers who embarked at Cherbourg had better odds of survival than those from
 Contributing
 Contributions are welcome! If you have suggestions for improvements or features, feel free to create a pull request or open an issue.
 
-License
-This project is licensed under the MIT License - see the LICENSE file for details.
+This repository contains a Python program designed to visualize demographic data using bar graphs and histograms. The visualizations are created using the popular libraries Pandas, Matplotlib, and Seaborn. The primary goal is to provide insights into the gender and age distribution of individuals, as well as their occupations, through various graphical representations.
+
+Features
+Bar Graphs:
+
+Gender Distribution
+Occupation Distribution
+Average Age by Occupation
+Gender Distribution by Age Group
+Histograms:
+
+Age Distribution
+Age Distribution by Gender (Overlaid)
+Age Distribution with Density Plot (KDE)
+Age Group Distribution
